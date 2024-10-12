@@ -1,8 +1,14 @@
+html, body {
+    height: 100%; /* Se till att både HTML och body täcker hela skärmens höjd */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Gör så att barnen staplas i en kolumn */
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
+    flex: 1; /* Gör så att body tar upp all tillgänglig höjd */
 }
 
 header {
@@ -19,6 +25,7 @@ nav a {
 }
 
 section {
+    flex: 1; /* Gör så att section tar upp så mycket utrymme som möjligt */
     margin: 20px;
     padding: 20px;
     background-color: #fff;
@@ -37,4 +44,21 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
+    margin-top: auto; /* Ser till att footern alltid är längst ner */
 }
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tre jämnt fördelade kolumner */
+    gap: 20px; /* Mellanrum mellan bilderna */
+    margin: 0 auto; /* Centrerar hela grid-sektionen på sidan */
+    width: 50%; /* Justera bredden för att få mer centrerade bilder */
+    justify-items: center; /* Centrerar bilderna inom varje kolumn */
+}
+
+.image-grid img {
+    width: 250px; /* Fast bredd */
+    height: 250px; /* Fast höjd för att hålla alla bilder lika stora */
+    object-fit: cover; /* Beskär bilden proportionellt */
+    border-radius: 8px; /* Rundade hörn på bilderna */
+}
+
