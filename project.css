@@ -1,0 +1,92 @@
+html, body {
+    height: 100%; /* Se till att både HTML och body täcker hela skärmens höjd */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Gör så att barnen staplas i en kolumn */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    flex: 1; /* Gör så att body tar upp all tillgänglig höjd */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-family: monospace;
+}
+
+section {
+    flex: 1; /* Gör så att section tar upp så mycket utrymme som möjligt */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: monospace
+}
+
+/* Layout för projekten */
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    position: relative;
+}
+
+/* Vänstra sidan (projekt 1) */
+.project-left {
+    width: 40%;
+    padding-right: 20px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 8px;
+}
+
+/* Högra sidan (projekt 2) */
+.project-right {
+    width: 40%;
+    padding-left: 20px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 8px;
+}
+
+/* Skiljelinje mellan projekten */
+.divider {
+    width: 2px;
+    background-color: black;
+    height: auto;
+    margin: 0 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Ser till att footern alltid är längst ner */
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
