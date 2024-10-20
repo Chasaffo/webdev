@@ -90,3 +90,29 @@ footer nav a {
     text-decoration: none;
     margin: 0 10px;
 }
+
+/* Responsiv stil för mobil med bestämd storlek */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column; /* Staplar projekten vertikalt */
+    }
+
+    .project-left, .project-right {
+        width: 100%; /* Gör projekten 100% breda */
+        padding: 10px;
+        margin-bottom: 20px; /* Lägger till utrymme mellan sektionerna */
+    }
+
+    .divider {
+        display: none; /* Dölj skiljelinjen på små skärmar */
+    }
+
+    h2 {
+        font-size: 20px; /* Mindre fontstorlek för mindre skärmar */
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}

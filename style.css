@@ -61,4 +61,15 @@ footer {
     object-fit: cover; /* Beskär bilden proportionellt */
     border-radius: 8px; /* Rundade hörn på bilderna */
 }
+/* Responsiv stil för mobil med bestämd storlek */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr 1fr; /* Två kolumner istället för tre */
+        width: 90%; /* Öka bredden så att det fyller mer av mobilens skärm */
+    }
 
+    .image-grid img {
+        width: 150px; /* Minska bildstorleken för mindre skärmar */
+        height: 150px;
+    }
+}

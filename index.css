@@ -47,3 +47,25 @@ footer {
     color: #fff;
     margin-top: auto;
 }
+
+/* Responsiv stil för mobil med bestämd storlek */
+@media (max-width: 768px) {
+    body {
+        background-size: contain; /* Gör att bakgrunden anpassar sig bättre till mindre skärmar */
+        height: auto; /* Tillåter att body tar upp så mycket höjd som behövs */
+    }
+
+    header {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px; /* Mindre textstorlek för navigeringen */
+    }
+
+    footer {
+        padding: 8px; /* Mindre padding i footern för mobil */
+    }
+}
